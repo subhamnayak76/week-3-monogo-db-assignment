@@ -40,10 +40,9 @@ router.post('/courses/:courseId', userMiddleware, async(req, res) => {
             purchasedCourses: courseId
         }
     })
-    res.json({
-        message: "Purchase complete!"
-    })
-});
+   
+})
+
 
 router.get('/purchasedCourses', userMiddleware, async (req, res) => {
     // Implement fetching purchased courses logic
