@@ -14,7 +14,7 @@ function userMiddleware(req, res, next) {
             next();
         }
         else{
-            res.status(403).res({
+            res.status(403).json({
                 msg : "user not found"
             })
         }
